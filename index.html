@@ -57,7 +57,6 @@
             background: var(--primary); bottom: -8px; left: 50%;
             transform: translateX(-50%); transition: width 0.3s;
         }
-        .nav-center a:hover::after { width: 0; }
         .nav-center a:hover::after, .nav-center a.active::after { width: 100%; }
 
         /* Search & Auth (unchanged) */
@@ -208,6 +207,55 @@
             margin-bottom: 1.5rem;
         }
         .why-item h3 { font-size: 1.6rem; margin-bottom: 1rem; }
+
+        /* ==================== NEW TUTOR SECTION ==================== */
+        .tutors {
+            padding: 120px 5%;
+            background: #f8fafc;
+            text-align: center;
+        }
+        .tutors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            max-width: 1300px;
+            margin: 4rem auto 0;
+        }
+        .tutor-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.4s;
+        }
+        .tutor-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .tutor-img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+        .tutor-info {
+            padding: 1.8rem;
+        }
+        .tutor-info h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .tutor-info .role {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        .tutor-info p {
+            color: var(--gray);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
 
         /* Achievements */
         .achievements {
@@ -394,6 +442,45 @@
                 <i class="fas fa-headset fa-3x"></i>
                 <h3>Lifetime Access & Support</h3>
                 <p>24/7 doubt support + all future updates free</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEW TUTORS SECTION ==================== -->
+    <section class="tutors">
+        <h2 class="section-title">Meet Our Expert Tutors</h2>
+        <div class="tutors-grid">
+            <div class="tutor-card">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" alt="Sarah Chen" class="tutor-img">
+                <div class="tutor-info">
+                    <h3>Sarah Chen</h3>
+                    <div class="role">Senior Python & ML Engineer @ Google</div>
+                    <p>Ex-Google, 12+ years teaching experience. Author of the bestselling Python Mastery course with over 40k students.</p>
+                </div>
+            </div>
+            <div class="tutor-card">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80" alt="Rahul Sharma" class="tutor-img">
+                <div class="tutor-info">
+                    <h3>Rahul Sharma</h3>
+                    <div class="role">Staff Engineer @ Meta | Ex-Amazon</div>
+                    <p>Specializes in React, Next.js & full-stack architecture. Helped 25k+ students land jobs at FAANG companies.</p>
+                </div>
+            </div>
+            <div class="tutor-card">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="Michael Torres" class="tutor-img">
+                <div class="tutor-info">
+                    <h3>Michael Torres</h3>
+                    <div class="role">Java & System Design Expert @ Microsoft</div>
+                    <p>15+ years in backend engineering. Known for his crystal-clear explanations of complex Java & Spring concepts.</p>
+                </div>
+            </div>
+            <!-- <div class="tutor-card">
+                <img src="https://images.unsplash.com/photo-1580489940927-7f5c2f2b6e58?w=800&q=80" alt="Priya Patel" class="tutor-img">
+                <div class="tutor-info">
+                    <h3>Priya Patel</h3>
+                    <div class="role">C++ & Competitive Programming Coach</div>
+                    <p>Codeforces Grandmaster, coached 200+ students to Google Code Jam & ICPC finals.</p>
+                </div> -->
             </div>
         </div>
     </section>
