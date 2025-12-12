@@ -69,6 +69,9 @@ Clone the project and run it locally:
 ```bash
 git clone https://github.com/kankush1803/e-learning
 
+
+🗂️ Project Structure
+
 e-learning/
 │── index.html
 │── about/
